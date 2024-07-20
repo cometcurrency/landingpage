@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comet Currency</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="output.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+</head>
+<body class="bg-black text-white" >
+  <!-- <main class="">
+    <video src="assets/realistic-white-light-meteor-shower-with-black-background-free-video.mp4"
+    class="absolute z-999 w-auto min-w-full min-h-full max-w-none"></video> -->
+
+    <nav class="px-5 py-3 flex gap-[22vw] items-center justify-between ">
+        <a class="flex items-center" href="#">
+          <img
+            src="assets/logo.png"
+            alt=""
+          />
+          <span class="text-lg font-semibold"></span>
+        </a>
+        <div class="text-[1.3vw] nav-menu hidden lg:flex justify-between gap-12 ">
+          <a href="#home" class=" font-medium uppercase  hover:text-[#c3a7e8]">Home</a>
+          <a href="#offer" class=" font-medium uppercase  hover:text-[#c3a7e8]">Feature</a>
+          <a href="#team" class="font-medium uppercase   hover:text-[#c3a7e8]">Team</a>
+          <a href="#faqs" class="font-medium uppercase  hover:text-[#c3a7e8]">faqs</a>
+          <!-- <a href="#" class="font-medium uppercase hover:text-indigo-500"></a> -->
+        </div>
+       
+       
+        <button class="menu font-semibold flex justify-around lg:hidden" onclick="handleMenu()">
+          <i class="ri-menu-line"></i>
+        </button>
+      <!-- hidden menu -->
+        <div id="nav-dialog" class="hidden fixed z-10 lg:hidden bg-black inset-0 p-3">
+          <div id="nav-bar" class="flex justify-between">
+              <a href="#" id="brand" class="flex gap-2 items-center">
+                  <img class="object-cover w-18 h-8 " src="assets/logo.png" alt="Logo">
+                  <span class="text-lg font-medium font-display"></span>
+              </a>
+              <button class="p-4  lg:hidden" onclick="handleMenu()">
+                  <i class="ri-close-line  text-white"></i>
+              </button>
+          </div>
+          <div class="mt-6">
+              <a href="#home" class="font-medium uppercase m-3 p-3 hover:text-[#c3a7e8]  block rounded-lg">Home</a>
+              <a href="#offer" class="font-medium uppercase m-3 p-3 hover:text-[#c3a7e8]  block rounded-lg">Offer</a>
+              <a href="#team" class="font-medium uppercase m-3 p-3 hover:text-[#c3a7e8]  block rounded-lg">Team</a>
+              <a href="#faqs" class="font-medium uppercase m-3 p-3 hover:text-[#c3a7e8]  block rounded-lg">faqs</a>
+              <!-- <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a> -->
+  
+          </div>
+        
+      </nav>
+      <!-- main -->
+      <section class="text-gray-600 body-font " id="home">
+        <div class="container mx-auto flex gap-3 px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font lg:text-8xl   sm:text-4xl text-4xl mb-4 font-medium text-white">Apna Digital 
+              <br class="hidden lg:inline-block">Wallet!!
+            </h1>
+            <p class="mb-8 leading-relaxed text-2xl text-white font-he"> <span class="text-[#c3a7e8] font-bold">Comet Currency</span> introduces the ultimate wallet superhero! Shop with our partners, earn instant cashback, and rescue not only the day but also your wallet.</p>
+            <div class="flex justify-center">
+              <a href="https://tally.so/r/mZdL7e">
+                <button class="inline-flex text-white bg-red-400 border-0  py-3 px-8 focus:outline-none hover:bg-red- rounded text-xl font-semibold">
+                  Join Waitlist</button>
+              </a>
+              
+                <a href="https://www.linkedin.com/company/cometcurrency/">
+                <button class="ml-4 inline-flex text-white bg-[#c3a7e8] border-0 py-3 px-8 focus:outline-none hover:bg-[#bfa6df] rounded text-xl font-semibold text-center">Connect to Linkedin</button></a>
+            </div>
+          </div>
+          <div class=" lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded md:h-[55vw] lg:h-[35vw] mx-auto h-[105vw]" alt="hero" src="assets/hero img.png">
+          </div>
+        </div>
+      </section>
+      <div class="px-6 py-3 w-fit text-[5vw] lg: text-lg bg-black text-[#c3a7e8] mx-auto border rounded-md border-gray-400 ">
+        <h2>Discover what we have in store</h2>
+
+      </div>
+      <!-- offer section -->
+      <section class="text-gray-600 body-font mt-10" id="offer">
+        <div class="container px-2 py-4 mx-auto flex flex-wrap">
+          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none">
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center  bg-[#c3a7e8] text-white relative z-10 title-font font-medium text-sm">1</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-[#c3a7e8] text-indigo-500 rounded-full inline-flex items-center justify-center">
+                <svg class="w-10 fill-white"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M370.7 96.1C346.1 39.5 289.7 0 224 0S101.9 39.5 77.3 96.1C60.9 97.5 48 111.2 48 128v64c0 16.8 12.9 30.5 29.3 31.9C101.9 280.5 158.3 320 224 320s122.1-39.5 146.7-96.1c16.4-1.4 29.3-15.1 29.3-31.9V128c0-16.8-12.9-30.5-29.3-31.9zM336 144v16c0 53-43 96-96 96H208c-53 0-96-43-96-96V144c0-26.5 21.5-48 48-48H288c26.5 0 48 21.5 48 48zM189.3 162.7l-6-21.2c-.9-3.3-3.9-5.5-7.3-5.5s-6.4 2.2-7.3 5.5l-6 21.2-21.2 6c-3.3 .9-5.5 3.9-5.5 7.3s2.2 6.4 5.5 7.3l21.2 6 6 21.2c.9 3.3 3.9 5.5 7.3 5.5s6.4-2.2 7.3-5.5l6-21.2 21.2-6c3.3-.9 5.5-3.9 5.5-7.3s-2.2-6.4-5.5-7.3l-21.2-6zM112.7 316.5C46.7 342.6 0 407 0 482.3C0 498.7 13.3 512 29.7 512H128V448c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64l98.3 0c16.4 0 29.7-13.3 29.7-29.7c0-75.3-46.7-139.7-112.7-165.8C303.9 338.8 265.5 352 224 352s-79.9-13.2-111.3-35.5zM176 448c-8.8 0-16 7.2-16 16v48h32V464c0-8.8-7.2-16-16-16zm96 32a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"/></svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class=" font-bold title-font text-white mb-1 lg:text-4xl">Superhero Prepaid Wallet</h2>
+                <p class="leading-relaxed text-gray-400 lg:text-xl">Earn cashback while shopping with our partner brands. Enjoy effortless savings with no hassles.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center  bg-[#c3a7e8] text-white relative z-10 title-font font-medium text-sm">2</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24  bg-[#c3a7e8] text-[#c3a7e8] rounded-full inline-flex items-center justify-center">
+                <svg class="w-10 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM16 128c-8.8 0-16 7.2-16 16V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V128H16zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V144c0-8.8-7.2-16-16-16H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"/></svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-bold title-font text-white mb-1 lg:text-4xl">What we offer?</h2>
+                <p class="leading-relaxed text-gray-400 lg:text-xl">Providing authentic connections and tangible outcomes that mutually benefit brands and their audiences.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center  bg-[#c3a7e8] text-white relative z-10 title-font font-medium text-sm">3</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24  bg-[#c3a7e8] text-indigo-500 rounded-full inline-flex items-center justify-center">
+                <svg class="w-10 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M400 96l0 .7c-5.3-.4-10.6-.7-16-.7H256c-16.5 0-32.5 2.1-47.8 6c-.1-2-.2-4-.2-6c0-53 43-96 96-96s96 43 96 96zm-16 32c3.5 0 7 .1 10.4 .3c4.2 .3 8.4 .7 12.6 1.3C424.6 109.1 450.8 96 480 96h11.5c10.4 0 18 9.8 15.5 19.9l-13.8 55.2c15.8 14.8 28.7 32.8 37.5 52.9H544c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32H512c-9.1 12.1-19.9 22.9-32 32v64c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H256v32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32V416c-34.9-26.2-58.7-66.3-63.2-112H68c-37.6 0-68-30.4-68-68s30.4-68 68-68h4c13.3 0 24 10.7 24 24s-10.7 24-24 24H68c-11 0-20 9-20 20s9 20 20 20H99.2c12.1-59.8 57.7-107.5 116.3-122.8c12.9-3.4 26.5-5.2 40.5-5.2H384zm64 136a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"/></svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-bold title-font text-white mb-1 lg:text-4xl">User Gains</h2>
+                <p class="leading-relaxed text-gray-400 lg:text-xl">Real cash as rewards on every purchase, fostering loyalty and smarter spendings.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center  bg-[#c3a7e8] text-white relative z-10 title-font font-medium text-sm">4</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24  bg-[#c3a7e8] text-[#c3a7e8] rounded-full inline-flex items-center justify-center">
+                <svg class="fill-white w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"/></svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-bold title-font text-white mb-1 lg:text-4xl">Brands Gains</h2>
+                <p class="leading-relaxed text-gray-400 lg:text-xl">Our ecosystem fosters irreversible customer behavior, driving growth for brands and seamless user engagements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fetures section -->
+      <div class=" py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:text-center">
+            <p class="mt-2 text-3xl lg:text-5xl mt-5 font-bold tracking-tight text-white sm:text-4xl">Get starstruck 💫 by amazing features.</p>
+            
+          </div>
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-1 lg:gap-y-16">
+              <div class="relative pl-16 lg:pl-20">
+                <dt class="text-base font-semibold leading-7 text-white lg:text-4xl">
+                  <div class="absolute left-0 top-0 flex h-14 w-14 items-center justify-center rounded-lg  bg-[#c3a7e8]">
+                    <svg class="fill-white w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M470.1 231.3s7.6 37.2 9.3 45H446c3.3-8.9 16-43.5 16-43.5-.2 .3 3.3-9.1 5.3-14.9l2.8 13.4zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM152.5 331.2L215.7 176h-42.5l-39.3 106-4.3-21.5-14-71.4c-2.3-9.9-9.4-12.7-18.2-13.1H32.7l-.7 3.1c15.8 4 29.9 9.8 42.2 17.1l35.8 135h42.5zm94.4 .2L272.1 176h-40.2l-25.1 155.4h40.1zm139.9-50.8c.2-17.7-10.6-31.2-33.7-42.3-14.1-7.1-22.7-11.9-22.7-19.2 .2-6.6 7.3-13.4 23.1-13.4 13.1-.3 22.7 2.8 29.9 5.9l3.6 1.7 5.5-33.6c-7.9-3.1-20.5-6.6-36-6.6-39.7 0-67.6 21.2-67.8 51.4-.3 22.3 20 34.7 35.2 42.2 15.5 7.6 20.8 12.6 20.8 19.3-.2 10.4-12.6 15.2-24.1 15.2-16 0-24.6-2.5-37.7-8.3l-5.3-2.5-5.6 34.9c9.4 4.3 26.8 8.1 44.8 8.3 42.2 .1 69.7-20.8 70-53zM528 331.4L495.6 176h-31.1c-9.6 0-16.9 2.8-21 12.9l-59.7 142.5H426s6.9-19.2 8.4-23.3H486c1.2 5.5 4.8 23.3 4.8 23.3H528z"/></svg>
+                  </div>
+                  Revolutionary Payment Solution:</dt>
+                <dd class="mt-2 text-base leading-7 text-gray-400 lg:text-xl">Introducing <span class="text-[#c3a7e8]">Comet Currency</span> the ultimate wallet superhero, revolutionizing spending habits by offering cashback at partnered brands, benefiting users and businesses alike.</dd>
+              </div>
+              <div class="relative pl-16 lg:pl-20">
+                <dt class="text-base font-semibold leading-7 text-white lg:text-4xl">
+                  <div class="absolute left-0 top-0 flex h-14 w-14 items-center justify-center rounded-lg  bg-[#c3a7e8]">
+                    <svg class="fill-white w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM176 256a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zm76-48c0 9.7 6.9 17.7 16 19.6V276h-4c-11 0-20 9-20 20s9 20 20 20h24 24c11 0 20-9 20-20s-9-20-20-20h-4V208c0-11-9-20-20-20H272c-11 0-20 9-20 20z"/></svg>
+                  </div>
+                  Win Cashback System                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-400 lg:text-xl">Users earn rewards with every purchase, fostering loyalty, while businesses enjoy cost-effective marketing and genuine customer connections.</dd>
+              </div>
+              <div class="relative pl-16 lg:pl-20">
+                <dt class="text-base font-semibold leading-7 text-white lg:text-4xl">
+                  <div class="absolute left-0 top-0 flex h-14 w-14 items-center justify-center rounded-lg  bg-[#c3a7e8]">
+                    <svg class="w-10 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM16 128c-8.8 0-16 7.2-16 16V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V128H16zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V144c0-8.8-7.2-16-16-16H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"/></svg>
+                  </div>
+                  Authentic Brand Engagement                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-400 lg:text-xl">In a competitive market, <span class="text-[#c3a7e8]">Comet Currency</span> facilitates genuine connections between brands and consumers, driving tangible results and enhancing the shopping experiences.</dd>
+              </div>
+              <div class="relative pl-16 lg:pl-20">
+                <dt class="text-base font-semibold leading-7 text-white lg:text-4xl">
+                  <div class="absolute left-0 top-0 flex h-14 w-14 items-center justify-center rounded-lg  bg-[#c3a7e8]">
+                    <svg class="fill-white w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                  </div>
+                  Transformative Shopping Experience                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-400 lg:text-xl">Join us in reshaping how you shop and effortlessly turn purchases into earnings and be part of a dynamic community.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <!-- image -->
+      <section>
+        <div class="container mx-auto flex flex-col  justify-center items-center">
+          <img class="lg:w-5/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="assets/comet currency p.svg">
+        </div>
+      </section>
+      <!-- marquee -->
+
+      <!-- <div id="line4" class=" mt-0  lg:mt-2 overflow-x-hidden  ">
+        <div class=" overflow-x-hidden flex-shrink-0 flex justify-center ">
+            <div id="line4" class="flex gap-8 p-6">
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+                <h3 class="my-0 mx-0 whitespace-nowrap font-display text-2xl font-semibold leading-7">Coming Soon</h3>
+                <span>•</span>
+            </div>
+        </div>
+    </div> -->
+    <!-- share shop save -->
+    <section class="text-white body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 lg:w-1/3">
+            <div class="h-full border border-gray-400 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+              <h1 class="title-font sm:text-2xl text-xl font-medium text-[#c3a7e8] mb-3">
+                  <svg class="fill-white w-12 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>  
+              Shop</h1>
+              <p class="leading-relaxed mb-3 text-gray-400">"Shop till you drop and pay with <span class="text-[#c3a7e8]" >Comet Currency</span> and it's like shopping with your own personal Comet!".</p>
+              
+              
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3">
+            <div class="h-full border border-gray-400 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+              <h1 class="title-font sm:text-2xl text-xl font-medium text-[#c3a7e8] mb-3">
+                  <svg class="fill-white w-12 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"/></svg>
+              Share.
+              </h1>
+              <p class="leading-relaxed mb-3 text-gray-400">"Show off your latest buys to your entourage and let them envy your shopping prowess!".
+
+              </p>
+             
+            
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3">
+            <div class="h-full border border-gray-400 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+              <h1 class="title-font sm:text-2xl text-xl font-medium text-[#c3a7e8] mb-3">
+                  <svg class="fill-white mx-auto w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z"/></svg>
+                  Save.
+
+              </h1>
+              <p class="leading-relaxed mb-3 text-gray-400">"Earn real cash as rewards, spend anywhere. It's like free money for your pocket!".</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      <!-- our team -->
+      <section class="text-gray-600 body-font" id="team">
+        <div class="container px-5 py-10 mx-auto">
+          <div class="flex flex-col text-center w-full mb-5">
+            <h1 class="text-3xl font-medium title-font mb-4 text-white lg:text-[3vw]">Meet the Team.</h1>
+           </div>
+          <div class="flex flex-wrap -m-4 lg:mt-9">
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-top sm:mb-0 mb-4" src="assets/vedanth-YrDabxw7M8h9rkXr.avif">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-[#c3a7e8] lg:text-2xl">Vedanth MK</h2>
+                  <h3 class=" mb-3 lg:text-xl text-white">CEO</h3>
+                  <p class="mb-4 text-gray-400">Our Visionary CEO is leading company strategy with innovation, integrity and a commitment to excellence and stakeholder value.</p>
+                  <span class="inline-flex gap-2">
+                    <a class="text-gray-500" id="Linkedin" href="https://www.linkedin.com/in/vedanth-m-k-65b314240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                      <svg class="fill-white w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" href="https://www.instagram.com/mk_vedanth?igsh=c3JlOGtlczZwbnAz&utm_source=qr">
+                      <svg class="fill-white w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                    
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-top sm:mb-0 mb-4" src="assets/jayram-dWxlQ85ReBCrRyWj.avif">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-[#c3a7e8] lg:text-2xl">Jay Amaran</h2>
+                  <h3 class="  mb-3 lg:text-xl text-white">Mentor</h3>
+                  <p class="mb-4 text-gray-400">Our Seasoned leader with over 35 years in Fintech, is guiding teams with expertise, wisdom, and passion to drive growth and innovation.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500 " href="https://www.linkedin.com/in/jay78iit80iim96mit?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                      <svg class="fill-white w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                    </a>
+                  
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-top sm:mb-0 mb-4" src="assets/sadiq-m5KvkzG1jptyajkw.avif">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-[#6b50c3bc] lg:text-2xl">Sadiq MM</h2>
+                  <h3 class="  mb-3 lg:text-xl text-white">CMO</h3>
+                  <p class="mb-4 text-gray-400">Our Skilled CMO directs marketing strategies, fostering brand growth and customer engagement through creativity, analytics, and market acumen.</p>
+                  <span class="inline-flex gap-2">
+                    <a class="text-gray-500 " href="https://www.linkedin.com/in/sadiq-m-m-1b89492b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                      <svg class="fill-white w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                    </a>
+                    </a>
+                    <a class="ml-2 text-gray-500" href="https://www.instagram.com/just.sadiq_?igsh=MXQwNWh2cW8zeXpnbQ==">
+                      <svg class="fill-white w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                   
+                  </span>
+                </div>
+              </div>
+            </div> -->
+            <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-top sm:mb-0 mb-4" src="assets/GTR02825-removebg-preview.png">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-[#c3a7e8] lg:text-2xl">Asif Ali Ahmed R</h2>
+                  <h3 class="  mb-3 lg:text-xl text-white">CTO</h3>
+                  <p class="mb-4 text-gray-400">
+                    Our Expert CTO is spearheading technological innovation, driving product development with expertise, vision, and a focus on future growth and efficiency.</p>
+                  <span class="inline-flex gap-2">
+                    <a class="text-gray-500" href="https://www.linkedin.com/in/asif-ali-ahmed-r-01539817a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                      <svg class="fill-white w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" href="https://www.instagram.com/heisen._.bug?igsh=aW9hOXV5YjBxenNm">
+                      <svg class="fill-white w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                  
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- faqs -->
+      <div id="faqs" class="container mx-auto lg:mt-10">
+        <h1 class="text-center lg:text-[5vw]	">FAQs</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6 items-start ">
+            <div class="group rounded-xl border border-gray-400 p-6">
+                <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-1">
+                    <p class="font-semibold text-[#c3a7e8] text-lg">What is Comet Currency?
+                    </p>
+                    <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                </dt>
+                <dd id="faq-1" class="hidden text-lg font-light mt-6">
+                    <p class=" ">Comet Currency is a pre-paid digital wallet that allows users to earn cashback on purchases made with our partnered merchants.</p>
+                </dd>
+            </div>
+            <div class="group cursor-pointer rounded-xl border border-gray-400  p-6">
+                <dt class="flex justify-between items-center" aria-controls="faq-2">
+                    <p class="font-semibold text-[#c3a7e8] text-lg">Why should you use Comet Currency ?
+                    </p>
+                    <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                </dt>
+                <dd id="faq-2" class="hidden text-lg font-light mt-6">
+                    <p class=" ">Comet Currency offers a comprehensive solution for seamless payments and instant cashback rewards on the go.</p>
+                </dd>
+            </div>
+            <div class="group rounded-xl border border-gray-400  p-6">
+                <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-3">
+                    <p class="font-semibold text-[#c3a7e8] text-lg">Where can I make payment using Comet Currency?
+                    </p>
+                    <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                </dt>
+                <dd id="faq-3" class="hidden text-lg font-light mt-6">
+                    <p class=" ">You can use Comet Currency to make payments anywhere UPI is accepted.</p>
+                </dd>
+            </div>
+            <div class="group cursor-pointer rounded-xl border border-gray-400 p-6">
+                <dt class="flex justify-between items-center" aria-controls="faq-4">
+                    <p class="font-semibold text-lg text-[#c3a7e8]">Does Comet Currency offer a card ?
+                    </p>
+                    <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                </dt>
+                <dd id="faq-4" class="hidden text-lg font-light mt-6">
+                    <p class=" ">Comet Currency provides a debit card that functions identically to the wallet. You must be above 18 years of age:).</p>
+                </dd>
+            </div>
+            <div class="group rounded-xl border border-gray-400 p-6">
+                <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-5">
+                    <p class="font-semibold text-[#c3a7e8] text-lg">Where do I get a cashback ?
+                    </p>
+                    <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                </dt>
+                <dd id="faq-5" class="hidden text-lg font-light mt-6">
+                    <p class=" ">You receive cashback whenever you shop with our partnered brands.</p>
+                </dd>
+            </div>
+            <div class="group cursor-pointer rounded-xl border border-gray-400  p-6">
+                <dt class="flex justify-between items-center" aria-controls="faq-6">
+                    <p class="font-semibold text-lg text-[#c3a7e8]">I am a brand how can I reach out ?
+                    </p>
+                    <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                </dt>
+                <dd id="faq-6" class="hidden text-lg font-light mt-6">
+                    <p class=" ">You can reach out to us on our mail or You can reach us on reachus@cometcurrency.com.</p>
+                </dd>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-gray-600 body-font mt-12">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="assets/logo.png" alt="">
+            <span class="ml-3 text-xl text-white">Comet Currency</span>
+          </a>
+          <!-- <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Comet Currency —
+            <a href="" class="text-gray-400 ml-1" rel="noopener noreferrer" target="_blank"></a>
+          </p> -->
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500" href="https://www.facebook.com/share/b2y3KVWySQNNLFuY/?mibextid=LQQJ4d">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" href="https://x.com/cometcurrency?s=11&t=K_tzPO2HN9bzs7Mj-YGE3A">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" href="https://www.instagram.com/comet.currency?igsh=N2wyNXcyd3QzMHA5&utm_source=qr">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/cometcurrency/">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+      
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="script.js"></script>
+</body>
+</html>
